@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 import tensorflow as tf
 from tensorflow import keras
-os.chdir("/Users/ryan/Desktop/6895 pj/lgg-mri-segmentation")
+os.chdir(os.path.dirname(__file__))
 
 class DataGen(keras.utils.Sequence):
     def __init__(self, ids,path, batch_size=8, image_size=128,form="tif",shuffle=True):
